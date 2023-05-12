@@ -1,0 +1,77 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search input {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 10px;
+  margin: 0px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3b82f6;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.filter {
+  min-width: 50vw;
+  font-size: 18px;
+}
+
+.filter fieldset {
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+
+.product-list {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  border: 1px solid #4b5563;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 1rem;
+  max-width: 20%;
+  padding: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .product-card {
+    min-width: 40%;
+  }
+}
